@@ -1,6 +1,6 @@
-from pymongo import Mongoclient
+from pymongo import MongoClient
 
-client = Mongoclient ("mongodb:??localhost:27017")
+client = MongoClient ("mongodb://localhost:27017")
 db = client ["ecommerce"]
 users_collection = db["users"]
 conversations_collection = db["conversations"]
